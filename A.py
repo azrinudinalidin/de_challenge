@@ -1,6 +1,5 @@
 def main():
-    import re
-
+    
     #example text = '  abcde   abc123 12345 123.45   def456ghi   123abc456def   75.78  10101  20asde20  visit   malaysia2020    '
 
     txt = input('Enter text: ')
@@ -16,6 +15,7 @@ def main():
     saveFile.close()
 
 def cariString(text):
+    import re
     f = re.findall(r'\d*\.\d+|\s*\w*\s+',txt)
     print('f '+str(f))
     return
